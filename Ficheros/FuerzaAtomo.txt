@@ -1,0 +1,23 @@
+FUERZA SOBRE UN ÁTOMO NEUTRO CERCANO A MICROESTRUCTURAS CONDUCTORAS
+
+* Se busca derivar el desplazamiento energético no retardado de un átomo neutro cercano a alambre cilíndrico y a semi-plano infinito, utilizando métodos numéricos y analíticos.
+
+##########################################################
+
+1. Introducción
+
+* Un objetivo importante de la física experimental de átomos fríos actual es aprender a controlar y manipular uno o unos pocos átomos en trampas o a lo largo de guías. Con este fin, más y más experimentos recientes tratan con átomos cerca de microestructuras, principalmente alambres y chips de varios tipos. Si estas microestructuras llevan corrientes fuertes, entonces los campos magnéticos resultantes y posiblemente campos externos adicionales a menudo crean las fuerzas dominantes sobre los átomos, que luego pueden usarse para el atrapamiento y la manipulación. Sin embargo, dado que un átomo es esencialmente un dipolo fluctuante, los efectos de polarización en esas microestructuras llevan a fuerzas sobre los átomos incluso en ausencia de corrientes y campos externos, y para los átomos muy cercanos a ellas, estas fuerzas pueden ser significativas. Siempre que no haya superposición directa de la función de onda, es decir, que el átomo esté al menos a unos pocos radios de Bohr de la microestructura, la única fuerza relevante es la fuerza de Casimir-Polder, que es el término comúnmente usado para la fuerza de van der Waals entre una partícula polarizable puntual y un objeto extendido, en este caso el átomo y la microestructura.
+
+---------------------------------------------------------
+
+2. Desplazamiento de Energía y Función de Green
+
+* Como es bien sabido, si la distancia del átomo a la superficie es mucho menor que la longitud de onda de una transición interna típica, entonces la interacción con la superficie está dominada por fuerzas electrostáticas no retardadas. A distancias mayores, la retardación es importante, pero al mismo tiempo, la fuerza de Casimir-Polder es significativamente menor y por lo tanto difícil de medir experimentalmente. Nos concentraremos en distancias pequeñas que se encuentran dentro del régimen electrostático no retardado, ya que estas están bien dentro del rango de las distancias experimentalmente realizables de átomos fríos respecto a microestructuras.
+
+* Primero se plantea la ecuación de Poisson clásica para obtener el potencial. A partir de la consideración de que un átomo es un dipolo fluctuante, se hace una aproximación a la densidad de carga de un átomo y al momento dipolar. Con esto, se busca la energía total del sistema y con ello se encuentra el corrimiento en energía del átomo utilizando el método de funciones de Green para la ecuación de Possion. Con esto, y la adaptación adecuada de la geometría de la superficie al problema, se puede lograr encontrar el desplazamiento energético.
+
+* Así que la tarea central para calcular el desplazamiento energético no retardado de un átomo en las cercanías de una superficie es determinar la función de Green electrostática del problema de valores en la frontera para la geometría de esta superficie.
+
+---------------------------------------------------------
+
+3. 

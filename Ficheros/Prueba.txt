@@ -1,0 +1,2 @@
+Hola qué tal? Estoy probando una forma de escribir archivos de texto desde C++
+Añadiendo una nueva línea.
