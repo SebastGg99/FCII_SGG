@@ -1,0 +1,74 @@
+#include <iostream>
+#include <fstream>
+#include <cmath>  
+using namespace std;
+
+int main() {
+   
+    fstream file("fileclase.txt", ios::in);
+
+    if (!file.is_open()) {
+        cout << "Error al abrir el archivo." << endl;
+        return 1;
+    }
+
+
+    ofstream outfile("nuevas_energias.txt", ios::out);
+    if (!outfile.is_open()) {
+        cout << "Error al abrir el archivo de salida." << endl;
+        return 1;
+    }
+
+
+    int* id = new int[500];
+    int* value1 = new int[500];
+    int* value2 = new int[500];
+    double* x = new double[500];
+    double* y = new double[500];
+    double* z = new double[500];
+    double* w = new double[500];  
+    double* t = new double[500];  
+
+    int count = 0;  
+
+
+    while (file >> id[count] >> value1[count] >> value2[count] 
+                >> x[count] >> y[count] >> z[count] 
+                >> w[count] >> t[count]) {
+ 
+        double energia = sqrt(x[count] * x[count] + 
+                              y[count] * y[count] + 
+                              z[count] * z[count] + 
+                              w[count] * w[count]);
+
+        outfile << id[count] << "   " 
+                << value1[count] << "   "
+                << value2[count] << "   "
+                << x[count] << "   " 
+                << y[count] << "   " 
+                << z[count] << "   " 
+                << w[count] << "   "
+                << t[count] << "   "
+                << energia << endl; 
+
+        count++;
+    }
+
+  
+    file.close();
+    outfile.close();
+
+
+    delete[] id;
+    delete[] value1;
+    delete[] value2;
+    delete[] x;
+    delete[] y;
+    delete[] z;
+    delete[] w;
+    delete[] t;
+
+    cout << "Datos agregados a nuevas_energias.txt. Nota: la ultima columna son las energias" << endl;
+
+    return 0;
+}
